@@ -19,9 +19,11 @@ def dividir(a, b):
         return 'Error'
     else:
         return a/b
+
+#This function multiply two numbres : a and b
 def product(a,b):
- """This function multiply two numbres : a and b"""
-  return (a*b)
+    return a*b
+
 #This function subtract two numbers
 def sub(a,b):
     return a-b
@@ -33,9 +35,9 @@ def menu():
     print("3. Product")
     print("4. Quotient")
     print("5. Pow")
-    a=input("Enter first number:")
-    b=input("Enter second number:)
     option = input("Choose an option: ")
+    a=int(input("Enter first number:"))
+    b=int(input("Enter second number:"))
     if option=='1':
         r=sumar(a,b)
     elif option=='2':
@@ -48,7 +50,7 @@ def menu():
         r=potencia(a,b)
     else:
         print("INEXISTENT OPTION")
-    print("The result is: "+r)
+    print("The result is: "+str(r))
 
 if __name__ == '__main__':
     while True:
