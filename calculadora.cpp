@@ -1,6 +1,6 @@
 #include <iostream.h>
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 using namespace std;
 
 int a;
