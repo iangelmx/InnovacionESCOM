@@ -1,7 +1,16 @@
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
 
+void sumar (float a, float b)
+{
+    float c;
+    cin >> a;
+    cin >> b;
+    c=a+b;
+    cout << "Resultado: " << c; 
+ }
 
 float Dividir (float,float);
 
@@ -27,3 +36,4 @@ float Dividir (float a, float b)
 	c=a/b;
 	return c;
 }
+
