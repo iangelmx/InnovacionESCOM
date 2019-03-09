@@ -9,6 +9,12 @@ void restar (float a, float b){
  }
 
 
+void multi (float x, float y){
+    float c;
+    c=a*b;
+    cout << x <<"*" << y << "=" << c;
+}
+
 void potenciacion(int a, int b){
   int a;
   int b;
@@ -54,3 +60,4 @@ float Dividir (float a, float b)
 	c=a/b;
 	return c;
 }
+

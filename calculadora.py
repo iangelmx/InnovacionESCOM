@@ -1,4 +1,5 @@
 
+
 """
 funcion que eleve a la potencia 2 2 numeros
 """
@@ -18,7 +19,10 @@ def dividir(a, b):
         return 'Error'
     else:
         return a/b
-      
+def product(a,b):
+ """This function multiply two numbres : a and b"""
+  return (a*b)
 #This function subtract two numbers
 def sub(a,b):
     return a-b
+
