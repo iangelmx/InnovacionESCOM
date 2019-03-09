@@ -10,7 +10,7 @@ def menu():
     print("4. Quotient")
     print("5. Pow")
     a=input("Enter first number:")
-    b=input("Enter second number:)
+    b=input("Enter second number:")
     option = input("Choose an option: ")
     if option=='1':
         r=sumar(a,b)
