@@ -18,3 +18,7 @@ def dividir(a, b):
         return 'Error'
     else:
         return a/b
+      
+#This function subtract two numbers
+def sub(a,b):
+    return a-b

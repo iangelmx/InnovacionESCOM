@@ -1,8 +1,12 @@
 
-
 #include <iostream>
 #include <cstdlib>
 using namespace std;
+
+void restar (float a, float b){
+     c=a-b;
+    cout << "Resultado: " << c; 
+ }
 
 
 void potenciacion(int a, int b){
