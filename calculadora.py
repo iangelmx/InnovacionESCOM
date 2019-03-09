@@ -1,5 +1,12 @@
 
-
+"""
+funcion que eleve a la potencia 2 2 numeros
+"""
+import numpy as np
+def potencia(num1,num2):
+    operacion = num1**num2
+    return operacion
+  
 # función que suma dos números
 def sumar(a, b):
     return a + b
@@ -11,4 +18,3 @@ def dividir(a, b):
         return 'Error'
     else:
         return a/b
-

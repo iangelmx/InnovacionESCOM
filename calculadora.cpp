@@ -1,7 +1,21 @@
 
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
+
+
+void potenciacion(int a, int b){
+  int a;
+  int b;
+    cout<<"Ingrese los valores para calcular la potencia"<<endl;
+    cout<<"Ingrese el valor a potenciar"<<endl;
+    cin>>a;
+    cout<<"Ingrese el valor de la potencia"<<endl;
+    cin>>b;
+    c=exp(a,b);
+    cout<<"El resultado de la exponencial es:"<<c;
+}
 
 void sumar (float a, float b)
 {
@@ -36,4 +50,3 @@ float Dividir (float a, float b)
 	c=a/b;
 	return c;
 }
-
