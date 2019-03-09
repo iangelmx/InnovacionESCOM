@@ -12,15 +12,15 @@ def menu():
     b=input("Enter second number:)
     option = input("Choose an option: ")
     if option=='1':
-        r=add(a,b)
+        r=sumar(a,b)
     elif option=='2':
         r=sub(a,b)
     elif option=="3":
-        r=prod(a,b)
+        r=product(a,b)
     elif option=="4":
-        r=div(a,b)
+        r=dividir(a,b)
     elif option=="5":
-        r=pot(a,b)
+        r=potencia(a,b)
     else:
         print("INEXISTENT OPTION")
     print("The result is: "+r)
