@@ -3,12 +3,11 @@ import requests
 import json
 import datetime
 import json
+import os
 from tasks.bot_speech_to_text import *
 from tasks.near_places import *
 
-env = json.loads( open("./settings.json", "r").read() )
-
-TOKEN = env['bot_token']
+TOKEN = os.getenv("TOKEN")
 
 bot = telebot.TeleBot(TOKEN)
 
