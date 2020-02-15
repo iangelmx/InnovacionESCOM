@@ -34,6 +34,8 @@ def recibeUbicacion(message):
 	bot.send_chat_action(chat_id, action_string)
 	print("Recibí una ubicación")
 	print(message)
+
+	mensaje="mensaje de prueba"
 	
 	bot.send_message(message.from_user.id, mensaje,  parse_mode='HTML')
 
@@ -41,9 +43,9 @@ def recibeUbicacion(message):
 	
 	bot.send_message(message.from_user.id, msg,  parse_mode='HTML')
 	#if 'send_doctor_vcard' in acciones:
-	bot.send_contact(message.from_user.id, phone_number=forms['doctor']['phone'], first_name=forms['doctor']['name'] )
+	bot.send_contact(message.from_user.id, phone_number="+525555555555", first_name="Ejemplo" )
 	#if 'send_location' in acciones:
-	bot.send_location(message.from_user.id, latitude=forms['location']['lat'], longitude=forms['location']['lng'])
+	bot.send_location(message.from_user.id, latitude=0, longitude=0)
 
 	
 @bot.message_handler(commands=['comando'])
