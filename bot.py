@@ -23,7 +23,7 @@ def send_welcome(message):
 	#for key in jsonMessage:
 	#	print("jsonMessage[",key,"] :",jsonMessage[key])
 
-	bot.reply_to(message, "Hey, hola!")
+	bot.reply_to(message, "Ahora digo otra cosa...")
 
 @bot.message_handler(content_types=['location'])
 def recibeUbicacion(message):
