@@ -1,7 +1,10 @@
 from ibm_watson import SpeechToTextV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+import json
 
-IAM_APIKEY='YE9iRhlIgTewoZmWNTvQBqtKNEd6VxWm1hN1EGVXIG3w'
+env = json.loads( open("./settings.json", "r").read() )
+
+IAM_APIKEY= env['iam_api_key_watson']
 authenticator = IAMAuthenticator(IAM_APIKEY)
 
 speech_to_text = SpeechToTextV1(authenticator=authenticator)

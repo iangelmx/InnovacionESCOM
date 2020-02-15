@@ -1,3 +1,4 @@
+import json
 def calcula_distancia_in_km(latitude1, longitude1, latitude2, longitude2):
 	from math import sin, cos, sqrt, atan2, radians
 
@@ -36,7 +37,8 @@ def get_nearest_hospitals(latitud, longitud):
 	# lon = j['longitude'] 
 	
 	# Use your own API key for making api request calls 
-	API_KEY = 'AIzaSyC_tO0YLLkYTNrxBz1vdFvFf58g4CPYcGM'
+	env = json.loads( open("./settings.json", "r").read() )
+	API_KEY = env['google_maps_api_key']
 	
 	# Initialising the GooglePlaces constructor 
 	google_places = GooglePlaces(API_KEY) 
